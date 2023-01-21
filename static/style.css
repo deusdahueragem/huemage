@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body {
+    background-color: #393B3E;
+    color: #fff;
+    height: 100vh;
+}
+
+section {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    padding: 28px 48px 48px 48px;
+    gap: 10px;
+
+    align-items: center;
+}
+
+input {
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    border: 0px;
+    height: 25px;
+}
+
+#text-img {
+    width: 500px;
+    padding: 0px 5px 0px 5px;
+
+    font-family: "Inter";
+    font-weight: 400;
+}
+
+#button-send {
+    width: 180px;
+    background-color: #fff;
+
+    font-family: "Inter";
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+a {
+    font-family: "Inter";
+    font-weight: bold; 
+    color: #000;
+
+    text-decoration: none;
+
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 4px 37px 5px 39px;
+    width: 180px;
+    height: 25px;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+#agrupamento {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-items: center;
+}
+
+img {
+    width: 30%;
+    border-radius: 5px;
+}
+
+#seed {
+    font-family: "Inter";
+    font-weight: bold; 
+    color: #fff;
+}

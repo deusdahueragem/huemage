@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huemage</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <section>
+        <form action="{{url_for('home')}}" method="POST">
+            {% if linkimage %}
+            <img src="{{ linkimage }}" alt="Generated auto by OPENAI">
+            {% else %}
+            {% endif %}
+            <input type="text" name="textimg" id="text-img" required>
+            <div id="agrupamento">
+                <input type="submit" value="GERAR IMAGEM" id="button-send">
+                {% if linkimage %}
+                <p><a href="{{ linkimage }}" target="_blank">ABRIR IMAGEM</a></p>
+                {% else %}
+                {% endif %}
+            </div>
+            {% if seed %}
+            <p id="seed">{{ seed }}</p>
+            {% else %}
+            {% endif %}
+        </form>
+    </section>
+</body>
+</html>
