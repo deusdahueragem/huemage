@@ -8,7 +8,7 @@ app = Flask(__name__)
 def home():
     if request.method == 'POST':
         # ler arquivo com chave da api criptografada, descriptografar e rodar.
-        openai.api_key = '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'
+        openai.api_key = 'myapikey'
 
         # Receber o texto digitado pelo usuário
         usertext = request.form['textimg']
