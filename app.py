@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 def home():
     if request.method == 'POST':
-        # ler arquivo com chave da api criptografada, descriptografar e rodar.
+        # Chave secreta da API
         openai.api_key = 'myapikey'
 
         # Receber o texto digitado pelo usuário
@@ -15,8 +15,6 @@ def home():
 
         response = openai.Image.create(
             # ler resultado do text box da pagina
-            # testar caso não for possível gerar imagem com textos em português
-            # utilizar alguma lib para traduzir os textos automaticamente
             prompt= usertext,
             # numero de imagens a serem geradas
             n=1,
